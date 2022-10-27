@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+@import url("variables.css");
+@import url("typography.css");
+
+/* ----- SOLUTIONS ----- */
+.box {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 5px 15px #00000026;
+  background: var(--white);
+  width: 100%;
+  margin-top: 30px;
+}
+
+.solutions {
+  position: relative;
+  z-index: 2;
+  background-color: var(--white);
+  width: fit-content;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.solutions h2 {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0 10px;
+}
+.solutions img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.text-content {
+  padding: 20px;
+}
+
+.box:first-of-type{
+    grid-column: 3;
+    grid-row: 1;
+}
+.box:nth-child(3){
+    grid-column: 1;
+    grid-row: 1;
+}
+/* ----- SHARING ----- */
+.sharing {
+  background-color: var(--light-greyish-blue);
+  padding-bottom: 30px;
+}
+.sharing .right-img {
+  text-align: center;
+}
+.sharing img {
+  width: 90%;
+  margin: 50px auto;
+}
+
+/* ----- SIGNING  ----- */
+.signing {
+  background-color: var(--white);
+  padding-bottom: 30px;
+}
+.signing img {
+  width: 90%;
+  margin: 40px auto;
+}
+.signing .left-img {
+  text-align: center;
+}
+
+/* FOOTER */
+footer{
+    height: 293px;
+    background-color: var(--black)
+}
+@media only screen and (min-width: 1000px) {
+  /* ----- SOLUTIONS ----- */
+  .grid-content-solutions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .box {
+    margin: 0 30px;
+    width: 80%;
+  }
+  .solutions {
+    padding-bottom: 80px;
+  }
+  .solutions h2 {
+    padding: 80px 0;
+    margin: 0 auto;
+  }
+
+  /* ----- SHARING ----- */
+  .grid-content-sharing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sharing img {
+    width: 70%;
+    margin: 50px auto 20px;
+  }
+  .sharing .left-text {
+    width: 70%;
+  }
+
+  /* ----- SIGNING  ----- */
+  .grid-content-signing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .signing img{
+    width: 70%;
+  }
+  .signing .right-text{
+    margin: auto;
+    width: 70%;
+  }
+}

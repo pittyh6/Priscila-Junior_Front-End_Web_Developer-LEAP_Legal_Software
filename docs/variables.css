@@ -1,0 +1,19 @@
+:root {
+  /* Primary color */
+  --vivid-blue: #0e5fe3;
+  --black: #191919;
+  --light-greyish-blue: #f6f7f8;
+  --white: #ffffff;
+
+  /*Secondary colors*/
+  --dark-blue: #0a49af;
+  --dark-blue-opacity: rgb(10, 73, 175, 0.9);
+  --sky-blue: #2ab7fe;
+  --law-connect-gradient: linear-gradient(#0e5fe3, #0a49af);
+
+  /*Fonts*/
+  --nunito: "Nunito Sans"; /*logo*/
+  --heebo: "Heebo"; /*secondary for market*/
+
+  --paragraph: #191919cc;
+}
